@@ -6,6 +6,7 @@ import Teachers from "./companents/Teachers";
 import Services from "./companents/Services";
 import About from "./companents/About";
 import FAQ from "./companents/FAQ";
+import TeacherApplication from "./companents/Teacherapplication";
 import Application from "./companents/Application";
 import Reviews from "./companents/Reviews";
 import Blog from "./companents/Blog";
@@ -22,6 +23,7 @@ const App = () => {
       <Services />
       <About />
       <FAQ />
+      <TeacherApplication/>
       <Application />
       <Reviews />
       <Blog />

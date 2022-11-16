@@ -2,14 +2,16 @@ import React from "react";
 import Logo from "../../assets/images/logo.svg";
 
 const index = () => {
-  function myFunction() {
+  function myFunction(e) {
     var x = document.getElementById("myLinks");
-    var bg = document.getElementsByClassName('menu');
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    let test = document.querySelector("body")
+    if (e) {
+      console.log(e);
+      test.style.overflow = "hidden"
     } else {
-      bg.style.backgroundColor="red"
-      x.style.display = "block";
+      console.log(e);
+      test.style.overflow = "visible"
+
     }
   }
   return (
@@ -77,7 +79,7 @@ const index = () => {
                 <option value="uz">O'zb</option>
               </select>
             </div>
-            <input id="menu-toggle" type="checkbox" />
+            <input id="menu-toggle" type="checkbox"  onChange={(e) => myFunction(e.target.checked)}/>
             <label class="menu-button-container" for="menu-toggle">
               <div class="menu-button"></div>
             </label>
