@@ -845,7 +845,6 @@ header {
   padding: 20px;
 }
 .reviews__card {
-  width: auto;
   flex-shrink: 0;
   padding: 20px 30px;
   height: auto;
@@ -947,6 +946,9 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .reviews__card{
+    width: 320px;
   }
 }
 
