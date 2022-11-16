@@ -225,6 +225,18 @@ header {
   .socail__media {
     display: none;
   }
+  .logo > img {
+    width: 150px;
+  }
+  .hero__text > h1,
+  .hero__text b,
+  h1,
+  .hero__text span {
+    font-size: 26px;
+  }
+  .social {
+    margin-bottom: 100px;
+  }
 }
 
 /* MEnu */
@@ -662,6 +674,9 @@ header {
   .about__video > video {
     max-width: 100%;
   }
+  .about__video::before {
+    display: none;
+  }
 }
 /* FAQ */
 .faq {
@@ -736,6 +751,8 @@ header {
   }
   .questions {
     width: 100%;
+    padding: 0;
+    padding: 40px 0;
   }
 }
 
@@ -772,11 +789,14 @@ header {
   .form__application {
     flex-direction: column !important;
   }
-  .teacher-application{
+  .teacher-application {
     flex-direction: column-reverse;
   }
-  .teacher-application__input::after{
+  .teacher-application__input::after {
     display: none;
+  }
+  .application-teacher-img > img {
+    width: 250px;
   }
 }
 
@@ -969,15 +989,14 @@ header {
     flex-direction: column;
     padding: 0;
   }
-  .contact__maps{
+  .contact__maps {
     margin-top: 50px;
     width: 100%;
     padding: 0;
   }
-  .contact__maps > iframe{
+  .contact__maps > iframe {
     width: 100%;
   }
-  
 }
 
 /* FOOTER */
@@ -987,7 +1006,7 @@ footer {
 .footer {
   padding: 100px 0 50px 0;
 }
-.footer__logo > p {
+.copy {
   padding-top: 10px;
 }
 .footer__items {
@@ -1006,20 +1025,36 @@ footer {
 .footer__social > a > svg {
   fill: #242426;
   margin-top: 20px;
+  width: 30px;
+  margin-left: 20px;
+  transition: all .3s;
+}
+.footer__social > a > svg:hover {
+  fill: #32d74b;
 }
 .footer__contact > li > a {
   color: #242426;
 }
+.copy-bottom{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-.footer__items{
-  flex-direction: column-reverse;
-  text-align:  center;
-}
-.footer__items > li{
-  margin-top: 50px;
-}
-.footer__items > li > h3{
-  font-weight: 700;
-}
+  .footer__items {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__items > li {
+    margin-top: 50px;
+  }
+  .footer__items > li > h3 {
+    font-weight: 700;
+  }
+  .copy{
+    display: none;
+  }
+  .copy-bottom{
+    display: block;
+    margin-top: 50px;
+  }
 }
