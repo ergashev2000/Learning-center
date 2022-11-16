@@ -1042,12 +1042,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .footer{
+    padding: 0;
+    margin-top: 100px;
+  }
   .footer__items {
     flex-direction: column;
     text-align: center;
   }
   .footer__items > li {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .footer__items > li > h3 {
     font-weight: 700;
