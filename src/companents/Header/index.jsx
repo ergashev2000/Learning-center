@@ -9,7 +9,7 @@ const index = () => {
           <div className="hero">
             <div className="hero__text">
               <h1>
-                Время обновлений и расширений границ вместе с<b> MUHABBAT </b>{" "}
+                Время обновлений и расширений границ вместе с<b> MUHABBAT </b>
                 <span>ZIYO</span>
               </h1>
               <p>

@@ -10,6 +10,7 @@ import Application from "./companents/Application";
 import Reviews from "./companents/Reviews";
 import Blog from "./companents/Blog";
 import Contact from "./companents/Contact";
+import Footer from './companents/Footer'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Reviews />
       <Blog />
       <Contact />
+      <Footer/>
     </>
   );
 };
